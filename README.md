@@ -24,7 +24,18 @@ Inside the individual_recommender folder
    7. ratings_genres.csv 
    8. tags.csv
 4. Run the Content_Preprocessing.ipynb notebook.
-5. Then either the Content_Notebook.ipynb or Content_Rec_Sys.py to generate movie recommendations for a random user.
+5. Then either the Content_Notebook.ipynb or Content_Rec_Sys.py to generate movie recommendations for a random expert user.
 
 
+## Group Recommender System
+
+### How to Run:
+1. Reuse the previously used data.csv file (average ratings per user for each genre)
+2. Specify the number of clusters (groups) to generate (adapt code if necessary)
+3. Run the rest of the Group_Recommendation.ipynb notebook
+
+*note:
+- in our case, group recommendation have been done for one group only (group 1)
+- prediction for a user and a specific movie have been set to the user's average rating to the genre of that movie (average if several genres)
+- once aggregation matrix complete, fairness have been applied 
 
